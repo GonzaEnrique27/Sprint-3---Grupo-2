@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO -->
+    <title>Zithum</title>
+    <link rel="shortcut icon" href="/img/15668177831743.jpg">
+    <meta charset="UTF-8">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   
+    <%- include ('/partials/header.ejs') %> 
+
+    <div class="dosCajitas">
+    <div class="caja-producto1">
+        <button class="cruz-carrito">X</button>
+        <div class="img-producto1">
+            <img src="/img/ProductoDeCarrito 1.png" alt="imagen producto 1">
+        </div>
+        
+        <div class="nombre-producto1">
+            <p>Stella Artoise 250ml</p>
+        </div><br><br><br>
+        <div class="info-producto1">
+            <label for="cantidad">cantidad:</label> <input type="number" name="cantidad"><br><br><br><br>
+            <p> subtotal: $250</p>
+        </div>
+        
+        
+    </div>
+<br><br><br>
+    <div class="caja-producto1">
+        <button class="cruz-carrito">X</button>
+        <div class="img-producto1">
+            <img src="/img/ProductoDeCarrito 2.png" alt="imagen producto 1">
+        </div>
+
+        <div class="nombre-producto1">
+            <p>Stella Artoise 250ml</p>
+        </div><br><br><br>
+        <div class="info-producto1">
+            <label for="cantidad">cantidad:</label> <input type="number" name="cantidad"><br><br><br><br>
+            <p> subtotal: $250</p>
+        </div>
+    
+        
+    </div>
+</div>
+<%- include ('partials/footer.ejs') %> 
+</body>
+
+</html>
