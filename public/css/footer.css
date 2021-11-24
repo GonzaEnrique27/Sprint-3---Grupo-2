@@ -1,0 +1,31 @@
+/* FOOTER */
+footer {
+    display: flex;
+    flex-wrap:nowrap;
+    background-color: #04485f;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer.frase{
+    opacity: 35%;
+}
+
+
+@media only screen and (min-width: 1200px){
+    footer{
+    flex-direction: row;
+    }
+footer .contacto{
+    order: 1
+}
+}

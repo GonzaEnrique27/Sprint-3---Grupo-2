@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITULO -->
     <title>Zithum</title>
-    <link rel="shortcut icon" href="/img/15668177831743.jpg">
-    <meta charset="UTF-8">
-
+    <link rel="shortcut icon" href="/img/15668177831743.jpg">    <meta charset="UTF-8">
+    
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -16,51 +14,73 @@
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
-
 <body>
-   
-    <%- include ('/partials/header.ejs') %> 
-
-    <div class="dosCajitas">
-    <div class="caja-producto1">
-        <button class="cruz-carrito">X</button>
-        <div class="img-producto1">
-            <img src="/img/ProductoDeCarrito 1.png" alt="imagen producto 1">
+    <header>
+        <nav id="h-menu-bar">
+			<div id="h-menu" onclick="onClickMenu()">
+				<div id="h-bar1" class="bar"></div>
+				<div id="h-bar2" class="bar"></div>
+				<div id="h-bar3" class="bar"></div>
+			</div>
+			<ul class="nav" id="h-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/register">Register</a></li>
+				<li><a href="/productCart">Carrito</a></li>
+				<li><a href="/productDetail">Detalle</a></li>
+			</ul>
+		</nav>
+		<div class="menu-bg" id="h-menu-bg" onclick="onClickMenu()"></div>
+		<div class="menu-bg2"id="h-menu-bg2" onclick="onClickMenu()"></div>
+            <form id="h-search-bar" action="">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="user">
+                <a href="#" class="chart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+    </header>
+    <main>
+        <div class="caja-producto1">
+            <div class="img-producto">
+                <img src="/img/ProductoDeCarrito 1.png" alt="imagen producto 1">
+            <div class="info-producto1">
+                <h1>Stella Artoise 250ml</h1>
+                <h3>Cantidad:</h3>
+                <button><a href="http://www.google.com.ar" target="blank">1</a></button>
+                <h3>subtotal:</h3><span class="precio-producto1">$250</span>
+            </div>
+            </div>
+            <div class="caja-producto2">
+                <div class="img-producto 2">
+                    <img src="/img/ProductoDeCarrito 2.png" alt="imagen producto 2">
+                <div class="info-producto2">
+                    <h1>Stella Artoise 250ml</h1>
+                    <h3>Cantidad:</h3>
+                    <button><a href="http://www.google.com.ar" target="blank">1</a></button>
+                    <h3>subtotal:</h3><span class="precio-producto2">$250</span>
+                </div>
         </div>
         
-        <div class="nombre-producto1">
-            <p>Stella Artoise 250ml</p>
-        </div><br><br><br>
-        <div class="info-producto1">
-            <label for="cantidad">cantidad:</label> <input type="number" name="cantidad"><br><br><br><br>
-            <p> subtotal: $250</p>
+    </main>
+    <footer> 
+        <div>
+            <p class="pfooter">Redes Sociales</p>
+            <p class="redes"><img src="/img/png redes.jpg" alt="redes" style="max-height: 50px;"></p>
         </div>
-        
-        
-    </div>
-<br><br><br>
-    <div class="caja-producto1">
-        <button class="cruz-carrito">X</button>
-        <div class="img-producto1">
-            <img src="/img/ProductoDeCarrito 2.png" alt="imagen producto 1">
+            <div><p class="pfooter">Contactanos</p>
+            <p class="email"><img src="/img/email icono.png" alt="email" style="max-height: 20px;"> zithum.2021@gmail.com</p>
+            <p class= "contacto"><img src="/img/wpp icono.png" alt="whatsapp" style="max-height: 20px"> +549-299-123</p>
         </div>
-
-        <div class="nombre-producto1">
-            <p>Stella Artoise 250ml</p>
-        </div><br><br><br>
-        <div class="info-producto1">
-            <label for="cantidad">cantidad:</label> <input type="number" name="cantidad"><br><br><br><br>
-            <p> subtotal: $250</p>
+        <div class="logo-central"> <img src="/img/logo de footer.png" alt="logoFooter" style="max-height: 60px;">
+            <p class="frase">Copyright © 2021 Zythum SA.</p>
         </div>
-    
-        
-    </div>
-</div>
-<%- include ('partials/footer.ejs') %> 
+    </footer>
+    <script src="/js/header.js"></script>
 </body>
-
 </html>
