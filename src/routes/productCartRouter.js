@@ -3,6 +3,6 @@ var router = express.Router();
 let controller = require('../controllers/productsController')
 
 /* GET home page. */
-router.get('/', controller.productCart);
+router.get('/productCart', controller.productCart);
 
 module.exports = router;
