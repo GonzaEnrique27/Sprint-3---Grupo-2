@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
+let controller = require('../controllers/loginController')
 
 /* GET home page. */
-router.get('/login', function(req, res) {
-  res.render('./views/login');
-});
+router.get('/', controller.login);
 
 module.exports = router;
