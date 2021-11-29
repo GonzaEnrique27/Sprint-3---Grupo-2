@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//Enrutadores
 var indexRouter = require('./routes/indexRouter');
 var loginRouter = require('./routes/loginRouter');
 var productCartRouter = require('./routes/productCartRouter');
