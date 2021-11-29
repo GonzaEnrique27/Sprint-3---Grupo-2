@@ -2,13 +2,11 @@
   /* SCROLL ITEMS HOME*/
 /**********************************/
 div.scrollmenu {
-    display: flex;
-    background-color: #fefecc;
+    display: flex;   
     overflow: auto;
     white-space: nowrap;
     align-items: center;
 
-  
 }
   
   div.scrollmenu a {
@@ -150,11 +148,11 @@ html { scroll-behavior: smooth; }
 		right: 50px;
 	}
 .slide img{
-	width: 500px;
+	width: 1200px;
 }
 
 .slider{
-	width: 500px;
+	width: 1200px;
 }
 
 .wrapper{
