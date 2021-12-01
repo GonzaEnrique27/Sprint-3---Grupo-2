@@ -18,6 +18,13 @@ header{
 	overflow: initial;
 }
 
+header .container{
+	max-width: 1200px;
+	flex-direction: column;
+	display: flex;
+	margin: auto;
+}
+
 header .menu1{
 display: flex;
 }
