@@ -6,9 +6,9 @@ footer {
     color: white;
     bottom: 0;
     width: 100%;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 footer p{
     font-size: 14px;
@@ -29,3 +29,4 @@ footer .contacto{
     order: 1
 }
 }
+
