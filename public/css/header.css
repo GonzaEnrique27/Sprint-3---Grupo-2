@@ -19,6 +19,7 @@ header{
 }
 
 header .container{
+	width: 95%;
 	max-width: 1200px;
 	flex-direction: column;
 	display: flex;
