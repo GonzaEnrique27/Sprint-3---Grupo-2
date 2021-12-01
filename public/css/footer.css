@@ -9,6 +9,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    position: fixed;
 }
 footer p{
     font-size: 14px;
