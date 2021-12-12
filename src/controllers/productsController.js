@@ -27,6 +27,15 @@ let controller = {
         let productsJSON= JSON.stringify(products)
         fs.writeFileSync(productsFilePath,productsJSON,'utf-8')
         res.redirect("/")
+    },
+    productCart: function(req,res){
+        res.render('productCart')
+    },
+    quitarProducto: function(req,res){
+        res.render('quitarProducto')
+    },
+    formulario: function(req,res){
+        res.render('formulario')
     }
 
 }
